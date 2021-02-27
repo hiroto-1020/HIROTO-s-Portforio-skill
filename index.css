@@ -1,0 +1,363 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  font-family: serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  font-family: 'Exo', sans-serif;
+  font-weight: bold;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+header a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+}
+
+header a:hover {
+  color: #4e54c8;
+}
+
+@keyframes titleAnimation {
+  0% {
+    letter-spacing: .3em;
+    opacity: 0;
+  }
+}
+
+.top-wrapper {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.top-wrapper h2 {
+  margin: 30px 0px;
+  animation: titleAnimation 1.5s;
+}
+
+.top-wrapper p {
+  width: 620px;
+  margin: 0px auto;
+  text-align: left;
+  line-height: 1.8em;
+  font-weight: bold;
+  animation: titleAnimation 1.5s;
+}
+
+.second-wrapper {
+  max-width: 850px;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+
+.second-wrapper .skill {
+  display: flex;
+  width: 730px;
+  margin: 0px auto;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.second-wrapper #skill {
+  padding: 10px;
+  width: 150px;
+  margin: 0px auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background: #ebebeb;
+  box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff;
+}
+
+.second-wrapper #skill p {
+  text-align: center;
+}
+
+.second-wrapper #skill p:last-child {
+  text-align: left;
+}
+
+.second-wrapper #skill img {
+  width: 65px;
+  margin-left: 40px;
+}
+
+.second-wrapper #sub-skill {
+  padding: 10px;
+  border-radius: 10px;
+  background: #ebebeb;
+  box-shadow: 5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff;
+  width: 130px;
+  margin: 0px auto;
+}
+
+.second-wrapper #sub-skill p {
+  text-align: center;
+}
+
+.second-wrapper #sub-skill p:last-child {
+  text-align: left;
+}
+
+.second-wrapper #sub-skill img {
+  width: 55px;
+  margin-left: 40px;
+}
+
+.skill.show {
+  opacity: 1;
+  transition: 1s;
+  transform: none;
+}
+
+.third-wrapper {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.third-wrapper h3 {
+  margin-bottom: 30px;
+}
+
+.third-wrapper img {
+  width: 250px;
+}
+
+.fore-wrapper {
+  padding-bottom: 40px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.fore-wrapper h2 {
+  margin: 0px;
+}
+
+.fore-wrapper h2 .fa-twitter {
+  font-size: 0.8em;
+  color: white;
+  padding: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.fore-wrapper h3 {
+  font-size: 15px;
+  margin: 5px 0px 0px;
+  color: black;
+}
+
+footer {
+  background-color: #BBBBBB;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 10px;
+}
+
+/*↓リンクブロック↓*/
+.item {
+  position: fixed;
+  z-index: 120;
+  bottom: 50px;
+  left: 70px;
+  font-size: 20px;
+  background-color: aqua;
+  padding: 10px;
+  border-radius: 18px;
+  background: #a6e0e7;
+  box-shadow: 5px 5px 13px #8dbec4, -5px -5px 13px #bfffff;
+}
+
+.item ul {
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 0px;
+  background: #5bbdc8;
+  box-shadow: inset 5px 5px 13px #4da1aa, inset -5px -5px 13px #69d9e6;
+}
+
+.item ul li {
+  background-color: #b7b7b7;
+  list-style: none;
+  margin-bottom: 25px;
+  text-align: center;
+  border-radius: 0px;
+  background: linear-gradient(145deg, #60e8f7, #51c3d0);
+  box-shadow: 5px 5px 10px #49b0bb, -5px -5px 10px #6bffff;
+}
+
+.item ul li a {
+  display: block;
+  height: 100%;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.item ul li:hover {
+  border-radius: 3px;
+  background: #41a4af;
+  box-shadow: inset 5px 5px 13px #35858e, inset -5px -5px 13px #4dc3d0;
+}
+
+/*↑リンクブロックここまで↑*/
+.sec-title {
+  font-family: serif;
+  padding: 0px 100px;
+  padding-top: 10px;
+  width: 150px;
+  margin: 0px auto;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #f5fffb, #cee6d4);
+  box-shadow: 5px 5px 19px #acbfb0, -5px -5px 19px #ffffff;
+}
+
+/*↓アイパット↓*/
+@media (max-width: 1024px) {
+  .item {
+    display: none;
+  }
+}
+
+@media (max-width: 896px) {
+  .item {
+    display: none;
+  }
+}
+
+/*↑アイパット↑*/
+/*↓スマホ↓*/
+@media (max-width: 481px) {
+  .top-wrapper p {
+    max-width: 400px;
+  }
+  .second-wrapper #skill img {
+    margin-left: 20px;
+  }
+  .second-wrapper .skill {
+    max-width: 400px;
+  }
+  .second-wrapper .skill .sass {
+    position: absolute;
+    top: 925px;
+    left: 80px;
+  }
+  .second-wrapper .skill .sass p:last-child {
+    padding-bottom: 20px;
+  }
+  .second-wrapper .skill .js {
+    position: absolute;
+    top: 925px;
+    left: 250px;
+  }
+  .second-wrapper .skill .vs {
+    position: absolute;
+    top: 1140px;
+    left: 80px;
+  }
+  .second-wrapper .skill .photo {
+    position: absolute;
+    top: 1140px;
+    left: 250px;
+  }
+  .second-wrapper .skill:last-child {
+    display: block;
+    padding-bottom: 400px;
+  }
+  .second-wrapper #skill {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 414px) {
+  .top-wrapper p {
+    max-width: 300px;
+  }
+  .second-wrapper .skill .sass {
+    left: 40px;
+    top: 1050px;
+  }
+  .second-wrapper .skill .js {
+    left: 230px;
+    top: 1050px;
+  }
+  .second-wrapper .skill .vs {
+    left: 40px;
+    top: 1250px;
+  }
+  .second-wrapper .skill .photo {
+    left: 230px;
+    top: 1250px;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    font-size: 10px;
+    text-align: center;
+  }
+  header a:last-child {
+    margin-right: 90px;
+  }
+  .sec-title {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .top-wrapper p {
+    margin-bottom: 30px;
+  }
+  .second-wrapper .skill {
+    display: block;
+  }
+  .second-wrapper .skill #sub-skill {
+    max-width: 100px;
+  }
+  .second-wrapper .skill #sub-skill:nth-of-type(3) {
+    padding-bottom: 35px;
+  }
+  .second-wrapper .skill .sass {
+    left: 30px;
+    top: 1550px;
+  }
+  .second-wrapper .skill .js {
+    left: 170px;
+    top: 1550px;
+  }
+  .second-wrapper .skill .vs {
+    left: 40px;
+    top: 1780px;
+    padding-bottom: 35px;
+  }
+  .second-wrapper .skill .photo {
+    left: 170px;
+    top: 1780px;
+  }
+  .second-wrapper .skill #skill {
+    max-width: 200px;
+    padding: 40px;
+    margin: 0px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  .second-wrapper .skill:last-child {
+    max-width: 300px;
+    padding-bottom: 500px;
+  }
+}
+
+/*↑スマホ↑*/
